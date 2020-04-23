@@ -1,5 +1,15 @@
 def join_nested_strings(src)
   outer_results =[]
+  row_index = 0
+  while row_index < src.length do
+    el_index = 0
+    while el_index < src[row_index].length do
+      outer_results += src[row_index][el_index]
+      el_index += 1
+    end
+    row_index +=1
+  end
+  outer_results
   
   
   

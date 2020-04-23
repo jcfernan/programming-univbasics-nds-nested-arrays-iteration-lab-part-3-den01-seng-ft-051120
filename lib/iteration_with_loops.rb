@@ -4,6 +4,7 @@ def join_nested_strings(src)
   while row_index < src.length do
     el_index = 0
     while el_index < src[row_index].length do
+      if src[row_index][el_index].type
       outer_results += src[row_index][el_index]
       el_index += 1
     end
